@@ -1,0 +1,108 @@
+<div class="row">
+  <div class="col-md-4">
+    <div class="card card-user">
+      <div class="image">
+        <img src="assets/img/damir-bosnjak.jpg" alt="...">
+      </div>
+      <div class="card-body">
+        <div class="author">
+          <a href="#">
+             <img class= "avatar border-gray" src="assets/img/mike.jpg" alt="...">
+            <h5 class="title">{{user.user_name}}</h5>
+          </a>
+          <p class="description">
+           {{user.email}}
+          </p>
+        </div>
+        <p class="description text-center">
+          "I like the way you work it
+          <br> No diggity
+          <br> I wanna bag it up"
+        </p>
+      </div>
+      </div><div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-18">
+          <div class="card card-user">
+            <div class="card-header">
+              <h5 class="card-title">User Information</h5>
+            </div>
+            <div class="card-body">
+        
+              <form autocomplete="off">
+             
+                <div class="row">
+                  <div class="col-md-10 pr-1">
+                    <div class="form-group">
+                     
+                      
+                        <div class="row">
+                            <div class="col-md-12 pr-1">
+                              <div class="text-left">
+                              <div class="form-group">
+                             <label>FirstName</label>
+                             <input type="text" class="form-control" [(ngModel)]="user.first_name" name="first_name"
+                             placeholder="firstName" value="Creative code"
+                             />
+                             <div class="row">
+                              <div class="col-md-12 pr-1">
+                                <div class="form-group">
+                               <label>LastName</label>
+                               <input type="text" class="form-control" [(ngModel)]="user.last_name" name="last_name"
+                               placeholder="lastName" value="Creative code"
+                               />
+                             <div class="row">
+                                <div class="col-md-12 pr-1">
+                                  <div class="form-group">
+                                    <label>Country</label>
+                                    <input type="text" class="form-control" 
+                                    [(ngModel)]="user.Country" name="Country"
+                                    placeholder="Enter the Country" 
+                                    />
+                                    <div class="row">
+                                      <div class="col-md-12 pr-1">
+                                        <div class="form-group">
+                                          <label>City</label>
+                                          <input type="text" class="form-control" 
+                                          [(ngModel)]="user.City" name="City"
+                                          placeholder="Enter the City" 
+                                          />
+              
+                                   </div>
+                                   </div>
+                                   </div>
+                                   </div>
+                                   </div>
+                                   </div>
+                                   </div>
+                                   </div>
+                </div>
+        </div>
+        </div>
+        </div>
+                        </div>
+                                   <div class="row">
+                                    <div class="update ml-7 mr-7">
+                                      <button type="submit" class="btn btn-primary btn-round" (click)="updateProfile()">
+                                        UpdateProfile
+                                      </button>
+                    </div>
+                    </div>
+               </div>     
+                    
+            </div>
+            </div>
+      
+      
+          </form>
+        </div>
+        </div>
+        </div>
+        </div>
+        
+        
+         
+     
+           

@@ -1,0 +1,77 @@
+<div class="row">
+<div class="col-md-8">
+  <div class="card card-user">
+    <div class="card-header">
+      <h5 class="card-title">Employee Information</h5>
+    </div>
+    <div class="card-body">
+
+      <form autocomplete="off">
+     
+        <div class="row">
+          <div class="col-md-12 pr-1">
+            <div class="form-group">
+             
+              
+                <div class="row">
+                    <div class="col-md-12 pr-1">
+                      <div class="form-group">
+                     <label>EmpName</label>
+                     <input type="text" class="form-control" [(ngModel)]="emForm.name" name="name"
+                     placeholder="EmployeeName" value="Creative code"
+                     />
+
+                     <div class="row">
+                        <div class="col-md-12 pr-1">
+                          <div class="form-group">
+                            <label>Designation</label>
+                            <input type="text" class="form-control" 
+                            [(ngModel)]="emForm.designation" name="designation"
+                            placeholder="Enter the designation" value="Creative code"
+                            />
+                            <div class="row">
+                              <div class="col-md-12 pr-1">
+                                <div class="form-group">
+                                  <label>Department</label>
+                                  <input type="text" class="form-control" 
+                                  [(ngModel)]="emForm.department" name="department"
+                                  placeholder="Enter the department" value="Creative code"
+                                  />
+                                  <div class="row">
+                                    <div class="col-md-12 pr-1">
+                                      <div class="form-group">
+                                        <label>Salary</label>
+                                        <input type="text" class="form-control" 
+                                        [(ngModel)]="emForm.salary" name="salary"
+                                        placeholder="Enter the Salary" value="Creative code"
+                                        />
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                           </div>
+                           </div>
+                           </div>
+                           </div>
+                           </div>
+                           </div>
+                           </div>
+                           </div>
+        </div>
+
+                           <div class="row">
+                            <div class="update ml-auto mr-auto">
+                              <button type="submit" class="btn btn-primary btn-round" (click)="update()">
+                                Update
+                              </button>
+            </div>
+            </div>
+            
+            </form>
+    </div>
+    </div>
+</div>
+</div>
+ 

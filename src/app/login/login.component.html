@@ -1,0 +1,30 @@
+<div class="row">
+    <div class="col-md-7 mx-auto">
+      <div class="card">
+        <div class="card-header">
+
+            <h3 style="text-align: center;">Login Page</h3>
+            </div>
+            <div class="card-body">
+                <form class="form"  #loginForm="ngForm" autocomplete="off">
+    
+        
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"[(ngModel)]="user.email" #email="ngModel"required email autocomplete="off">
+              
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" name=" password" id="password" aria-describedby="passwordHelp" placeholder="enter password" [(ngModel)]="user.password" #password="ngModel" required password autocomplete="off"><br>
+                
+              </div>
+              <button type="submit" class="btn btn-primary" (click)="signup()">Signup</button>
+              <button type="submit" class="btn btn-primary" (click)="login()">Login</button>
+              <span>{{invalidData}}</span>
+</form>
+</div>
+  </div>   
+  </div>
+

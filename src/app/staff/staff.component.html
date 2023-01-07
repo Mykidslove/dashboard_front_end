@@ -1,0 +1,42 @@
+<div class="row">
+    <div class="col-md-12">
+      <div class="col-md-12">
+        <div class="float-right">
+        <button type="submit" class="btn btn-primary btn-round" (click)="staffAdd()">Add</button>
+      </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <h4 class="card-title">Simple Table</h4>
+        </div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table">
+              <thead class="text-primary">
+                <th>StaffId</th>
+                <th>Name</th>
+                <th>Designation</th>
+                <th class="text-right">Actions</th>
+              </thead>
+              <tbody>
+                <tr *ngFor="let staff of stafflist">
+                    <td>
+                      {{ staff.staff_id }}
+                    </td>
+                    <td>
+                      {{ staff.staff_name }}
+                    </td>
+                    <td>
+                      {{ staff.designation }}
+                    </td>
+                    <td> <button type="submit" class="btn btn-primary btn-round" (click)="editEmp(staff.staff_id)">Edit</button></td> 
+                    <td> <button type="submit" class="btn btn-primary btn-round" (click)="deleteEmp(staff.staff_id)">Delete</button></td> 
+                  </tr>
+                </tbody>
+              </table>
+              </div>
+              </div>
+              </div>
+    </div>
+
+                

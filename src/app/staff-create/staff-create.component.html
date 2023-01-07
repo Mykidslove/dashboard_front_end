@@ -1,0 +1,64 @@
+<div class="row">
+<div class="col-md-8">
+  <div class="card card-user">
+    <div class="card-header">
+      <h5 class="card-title">ManagementSataff  Inforamation</h5>
+    </div>
+    <div class="card-body">
+
+      <form [formGroup]="staffForm" autocomplete="off">
+     
+        <div class="row">
+          <div class="col-md-12 pr-1">
+            <div class="form-group">
+              <label>StaffId</label>
+              
+              <input
+                  type="text"
+                  class="form-control"
+                  formControlName="staff_id"
+                  placeholder="Staff_id"
+                  value="Creative Code Inc."
+                />
+
+              
+                <div class="row">
+                    <div class="col-md-12 pr-1">
+                      <div class="form-group">
+                     <label>StaffName</label>
+                     <input type="text" class="form-control" formControlName="staff_name" 
+                     placeholder="StaffName" value="Creative code"
+                     />
+
+                     <div class="row">
+                        <div class="col-md-12 pr-1">
+                          <div class="form-group">
+                            <label>Designation</label>
+                            <input type="text" class="form-control" formControlName="designation" 
+                            placeholder="Enter the designation" value="Creative code"
+                            />
+
+                           </div>
+                           </div>
+                           </div>
+                           </div>
+                           </div>
+                           </div>
+                           </div>
+                           </div>
+        </div>
+
+                           <div class="row">
+                            <div class="update ml-auto mr-auto">
+                              <button type="submit" class="btn btn-primary btn-round" (click)="create()">
+                                Create
+                              </button>
+            </div>
+            </div>
+            
+            </form>
+    </div>
+    </div>
+</div>
+</div>
+ 
